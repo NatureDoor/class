@@ -63,6 +63,7 @@
             return this;
         });
     };
+
     function numberRoller(slno){
             var min=$('.roller-title-number-'+slno).attr('data-min');
             var max=$('.roller-title-number-'+slno).attr('data-max');
@@ -76,7 +77,7 @@
             numberRoll(slno,min,max,increment,timeout);
             
     }
-    function numberRoll(slno,min,max,increment,timeout){
+    function numberRoll(slno,min,max,increment,timeout){//alert(slno+"="+min+"="+max+"="+increment+"="+timeout);
         if(min<=max){
             $('.roller-title-number-'+slno).html(min);
             min=parseInt(min)+parseInt(increment);
