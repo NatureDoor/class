@@ -1,18 +1,9 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="zxx">
 <head>
 	<title>关于我们</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script>
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
-
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
 	<!--m3u8视频播放-->
 	<link href="css/video-js.min.css" rel="stylesheet">
 	<!-- //meta-tags -->
@@ -20,9 +11,20 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- font-awesome -->
 	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- 网页图标-->
 	<link rel="icon" href="images/网络.png" sizes="128x128" type="image/png">
-	<!-- fonts -->
+	
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+	
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
 </head>
+
 
 <body>
 	<!-- header -->
@@ -78,76 +80,285 @@
 					<span>W</span>elcome
 				</h3>
 				<div class="tittle-style">
-	
 				</div>
 			</div>
-			<div class="welcome-sub-wthree">
-				<div class="col-md-6 banner_bottom_left">
-					<h4>班委 副班长
-						<span>黄镇</span>
-					</h4>
-					<p>热爱 好奇 发现</p>
-					<p>你猜猜我会说些什么？我现在还没想好。</p>
-					<p>这是一个介绍我家乡的视频，有兴趣的可以看看哦~</p>
-					<!-- 在这里添加视频播放器   .banner_bottom_left video定义了该样式  -->
-					<video id="my-video" class="video-js" controls preload="auto" 
-		  poster="m.jpg" data-setup="{}" style="height: 100%;position: relative;width: 100%">
-        <source src="http://47.103.195.66/hls/summary.m3u8" type="application/x-mpegURL">
-        <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
-      </video>
-						
-<pre>  
-   _____  _____	    ___________	
-   |   |  |   |	    \________/
-   |   |__|   |          /  /
-   |	__    |         /  /
-   |   |  |   |        /  /______
-   |___|  |___|	      /_________/
-</pre>
-<canvas id="myCanvas"></canvas>
-<script>
-    const width = document.getElementById("myCanvas").width = screen.availWidth;
-    const height = document.getElementById("myCanvas").height = screen.availHeight;
-    const ctx = document.getElementById("myCanvas").getContext("2d");
-    const arr = Array(Math.ceil(width / 10)).fill(0);
-    const str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split("");
-
-function rain() {
-    ctx.fillStyle = "rgba(0,0,0,0.05)";
-    ctx.fillRect(0, 0, width, height);
-    ctx.fillStyle = "#0f0";
-    arr.forEach(function (value, index) {
-        ctx.fillText(str[Math.floor(Math.random() * str.length)], index * 10, value + 10);
-        arr[index] = value >= height || value > 8888 * Math.random() ? 0 : value + 10;
-    });
-}
-
-setInterval(rain, 30);
-</script>
-				</div>
-				<!-- Stats-->
-				<div class="col-md-6 stats-info-agile" style="background: url(images/介绍1.jpg) no-repeat center;">
-					<p>&nbsp;&nbsp;&nbsp;</p>
-					<p>&nbsp;&nbsp;&nbsp;</p>
-					<p>&nbsp;&nbsp;&nbsp;</p>
-					<p>&nbsp;&nbsp;&nbsp;</p>
-					<p>&nbsp;&nbsp;&nbsp;</p>
-				<p>大江东去，浪淘尽，千古风流人物。</p>
-				<p>故垒西边，人道是、三国周郎赤壁。</p>
-				<p>乱石穿空，惊涛拍岸，卷起千堆雪。</p>
-				<p>江山如画，一时多少豪杰。</p>
-				<p>遥想公瑾当年，小乔出嫁了，雄姿英发。</p>
-				<p>羽扇纶巾，谈笑间、樯橹灰飞烟灭。</p>
-				<p>故国神游，多情应笑我，早生华发，</p>
-				<p>人生如梦。一尊欢醉江月。</p>
-				</div>
-<script src="js/video.min.js"></script> 
-<script type="text/javascript">
-		
-			var myPlayer = videojs('my-video');
-			videojs("my-video").ready(function(){
-				var myPlayer = this;
-				myPlayer.play();
-			});
-			  
-		</script> 
+			<div class="col-md-6 banner_bottom_left">
+				<h4>班委 班长
+					<span>梁博</span>
+				</h4>
+				<p>负责范围：
+				<br>&nbsp;&nbsp;1、
+				<br />&nbsp;&nbsp;2、
+				<br />&nbsp;&nbsp;3、
+				<br />&nbsp;&nbsp;4、
+				<br />&nbsp;&nbsp;5、
+				<br />&nbsp;&nbsp;6、
+				<br />&nbsp;&nbsp;7、
+				<br />&nbsp;&nbsp;8、
+				</p>
+				<p>还没想好</p>
+				<!-- 在这里添加视频播放器   .banner_bottom_left video定义了该样式  -->
+				<video id="my-video" class="video-js" controls preload="auto"  poster="m.jpg" data-setup="{}" style="position: relative;width: 100%">
+				<source src="123" type="application/x-mpegURL">
+				<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+				</video>
+			</div>	
+			<div class="col-md-6 stats-info-agile" style="background: url(images/介绍1.jpg) no-repeat center;margin-bottom: 100px;">
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								
+			</div>
+			<br /><br /><br /><br />
+			<div class="col-md-6 banner_bottom_left">
+				<h4>班委 副班长
+					<span>黄镇</span>
+				</h4>
+				<p>负责范围：
+				<br>&nbsp;&nbsp;1、c语言作业收交与分发
+				<br />&nbsp;&nbsp;2、主题班会  ppt介绍
+				<br />&nbsp;&nbsp;3、每周心得安排
+				<br />&nbsp;&nbsp;4、班级纪律协助管理
+				<br />&nbsp;&nbsp;5、班级表格优化
+				<br />&nbsp;&nbsp;6、技术问题
+				<br />&nbsp;&nbsp;7、协助班长管理班级
+				<br />&nbsp;&nbsp;8、代同学向辅导员咨询所面临的
+				</p>
+				<p>这是一个介绍我家乡的视频，有兴趣的可以看看哦~</p>
+				<!-- 在这里添加视频播放器   .banner_bottom_left video定义了该样式  -->
+				<video id="my-video" class="video-js" controls preload="auto"  poster="m.jpg" data-setup="{}" style="position: relative;width: 100%">
+				<source src="http://47.103.195.66/hls/summary.m3u8" type="application/x-mpegURL">
+				<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+				</video>
+			</div>	
+			<div class="col-md-6 stats-info-agile" style="background: url(images/介绍1.jpg) no-repeat center;margin-bottom: 100px;">
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>大江东去，浪淘尽，千古风流人物。</p>
+								<p>故垒西边，人道是、三国周郎赤壁。</p>
+								<p>乱石穿空，惊涛拍岸，卷起千堆雪。</p>
+								<p>江山如画，一时多少豪杰。</p>
+								<p>遥想公瑾当年，小乔出嫁了，雄姿英发。</p>
+								<p>羽扇纶巾，谈笑间、樯橹灰飞烟灭。</p>
+								<p>故国神游，多情应笑我，早生华发，</p>
+								<p>人生如梦。一尊欢醉江月。</p>
+			</div>
+			<br /><br /><br /><br />
+			<div class="col-md-6 banner_bottom_left">
+				<h4>班委 团支书
+					<span>颜慧莹</span>
+				</h4>
+				<p>负责范围：
+				<br>&nbsp;&nbsp;1、入团安排
+				<br />&nbsp;&nbsp;2、共青团知识宣传
+				<br />&nbsp;&nbsp;3、纪律管理
+				<br />&nbsp;&nbsp;4、
+				<br />&nbsp;&nbsp;5、
+				<br />&nbsp;&nbsp;6、
+				<br />&nbsp;&nbsp;7、
+				<br />&nbsp;&nbsp;8、
+				</p>
+				<p>还没想好</p>
+				<!-- 在这里添加视频播放器   .banner_bottom_left video定义了该样式  -->
+				<video id="my-video" class="video-js" controls preload="auto"  poster="m.jpg" data-setup="{}" style="position: relative;width: 100%">
+				<source src="123" type="application/x-mpegURL">
+				<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+				</video>
+			</div>	
+			<div class="col-md-6 stats-info-agile" style="background: url(images/介绍2.jpg) no-repeat center;margin-bottom: 100px;opacity: 0.4;">
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								
+			</div>
+			<br /><br /><br /><br />
+			<div class="col-md-6 banner_bottom_left">
+				<h4>班委 学习委员
+					<span>张亮</span>
+				</h4>
+				<p>负责范围：
+				<br>&nbsp;&nbsp;1、
+				<br />&nbsp;&nbsp;2、
+				<br />&nbsp;&nbsp;3、
+				<br />&nbsp;&nbsp;4、
+				<br />&nbsp;&nbsp;5、
+				<br />&nbsp;&nbsp;6、
+				<br />&nbsp;&nbsp;7、
+				<br />&nbsp;&nbsp;8、
+				</p>
+				<p>还没想好</p>
+				<!-- 在这里添加视频播放器   .banner_bottom_left video定义了该样式  -->
+				<video id="my-video" class="video-js" controls preload="auto"  poster="m.jpg" data-setup="{}" style="position: relative;width: 100%">
+				<source src="123" type="application/x-mpegURL">
+				<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+				</video>
+			</div>	
+			<div class="col-md-6 stats-info-agile" style="background: url(images/介绍1.jpg) no-repeat center;margin-bottom: 100px;">
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								
+			</div>
+			<br /><br /><br /><br />
+			<div class="col-md-6 banner_bottom_left">
+				<h4>班委 生活委员
+					<span>龙金妹</span>
+				</h4>
+				<p>负责范围：
+				<br>&nbsp;&nbsp;1、
+				<br />&nbsp;&nbsp;2、
+				<br />&nbsp;&nbsp;3、
+				<br />&nbsp;&nbsp;4、
+				<br />&nbsp;&nbsp;5、
+				<br />&nbsp;&nbsp;6、
+				<br />&nbsp;&nbsp;7、
+				<br />&nbsp;&nbsp;8、
+				</p>
+				<p>还没想好</p>
+				<!-- 在这里添加视频播放器   .banner_bottom_left video定义了该样式  -->
+				<video id="my-video" class="video-js" controls preload="auto"  poster="m.jpg" data-setup="{}" style="position: relative;width: 100%">
+				<source src="123" type="application/x-mpegURL">
+				<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+				</video>
+			</div>	
+			<div class="col-md-6 stats-info-agile" style="background: url(images/介绍1.jpg) no-repeat center;margin-bottom: 100px;">
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								
+			</div>
+			<br /><br /><br /><br />
+			<div class="col-md-6 banner_bottom_left">
+				<h4>班委 心理委员（男）
+					<span>刘宏</span>
+				</h4>
+				<p>负责范围：
+				<br>&nbsp;&nbsp;1、
+				<br />&nbsp;&nbsp;2、
+				<br />&nbsp;&nbsp;3、
+				<br />&nbsp;&nbsp;4、
+				<br />&nbsp;&nbsp;5、
+				<br />&nbsp;&nbsp;6、
+				<br />&nbsp;&nbsp;7、
+				<br />&nbsp;&nbsp;8、
+				</p>
+				<p>还没想好</p>
+				<!-- 在这里添加视频播放器   .banner_bottom_left video定义了该样式  -->
+				<video id="my-video" class="video-js" controls preload="auto"  poster="m.jpg" data-setup="{}" style="position: relative;width: 100%">
+				<source src="123" type="application/x-mpegURL">
+				<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+				</video>
+			</div>	
+			<div class="col-md-6 stats-info-agile" style="background: url(images/介绍1.jpg) no-repeat center;margin-bottom: 100px;">
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								
+			</div>
+			<br /><br /><br /><br />
+			<div class="col-md-6 banner_bottom_left">
+				<h4>班委 心理委员（女）
+					<span>陆琪</span>
+				</h4>
+				<p>负责范围：
+				<br>&nbsp;&nbsp;1、
+				<br />&nbsp;&nbsp;2、
+				<br />&nbsp;&nbsp;3、
+				<br />&nbsp;&nbsp;4、
+				<br />&nbsp;&nbsp;5、
+				<br />&nbsp;&nbsp;6、
+				<br />&nbsp;&nbsp;7、
+				<br />&nbsp;&nbsp;8、
+				</p>
+				<p>还没想好</p>
+				<!-- 在这里添加视频播放器   .banner_bottom_left video定义了该样式  -->
+				<video id="my-video" class="video-js" controls preload="auto"  poster="m.jpg" data-setup="{}" style="position: relative;width: 100%">
+				<source src="123" type="application/x-mpegURL">
+				<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+				</video>
+			</div>	
+			<div class="col-md-6 stats-info-agile" style="background: url(images/介绍1.jpg) no-repeat center;margin-bottom: 100px;">
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								
+			</div>
+			<br /><br /><br /><br />
+			<div class="col-md-6 banner_bottom_left">
+				<h4>班委 体育委员
+					<span>王文武</span>
+				</h4>
+				<p>负责范围：
+				<br>&nbsp;&nbsp;1、
+				<br />&nbsp;&nbsp;2、
+				<br />&nbsp;&nbsp;3、
+				<br />&nbsp;&nbsp;4、
+				<br />&nbsp;&nbsp;5、
+				<br />&nbsp;&nbsp;6、
+				<br />&nbsp;&nbsp;7、
+				<br />&nbsp;&nbsp;8、
+				</p>
+				<p>还没想好</p>
+				<!-- 在这里添加视频播放器   .banner_bottom_left video定义了该样式  -->
+				<video id="my-video" class="video-js" controls preload="auto"  poster="m.jpg" data-setup="{}" style="position: relative;width: 100%">
+				<source src="123" type="application/x-mpegURL">
+				<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+				</video>
+			</div>	
+			<div class="col-md-6 stats-info-agile" style="background: url(images/介绍1.jpg) no-repeat center;margin-bottom: 100px;">
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								
+			</div>
+			<br /><br /><br /><br />
+			<div class="col-md-6 banner_bottom_left">
+				<h4>班委 宣传委员
+					<span>欧阳羽炫</span>
+				</h4>
+				<p>负责范围：
+				<br>&nbsp;&nbsp;1、
+				<br />&nbsp;&nbsp;2、
+				<br />&nbsp;&nbsp;3、
+				<br />&nbsp;&nbsp;4、
+				<br />&nbsp;&nbsp;5、
+				<br />&nbsp;&nbsp;6、
+				<br />&nbsp;&nbsp;7、
+				<br />&nbsp;&nbsp;8、
+				</p>
+				<p>还没想好</p>
+				<!-- 在这里添加视频播放器   .banner_bottom_left video定义了该样式  -->
+				<video id="my-video" class="video-js" controls preload="auto"  poster="m.jpg" data-setup="{}" style="position: relative;width: 100%">
+				<source src="123" type="application/x-mpegURL">
+				<p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+				</video>
+			</div>	
+			<div class="col-md-6 stats-info-agile" style="background: url(images/介绍1.jpg) no-repeat center;margin-bottom: 100px;">
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								<p>&nbsp;&nbsp;&nbsp;</p>
+								
+			</div>
+		</div>
+	</div>
+	
+	
